@@ -273,6 +273,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -346,6 +349,9 @@
   }
   .text-\[1\.1rem\] {
     font-size: 1.1rem;
+  }
+  .text-\[1\.8rem\] {
+    font-size: 1.8rem;
   }
   .text-\[2\.2rem\] {
     font-size: 2.2rem;
