@@ -11,75 +11,102 @@
         class="w-[100%] h-[12vh] flex justify-between px-[30px] items-center"
       >
         <h1 class="text-[2rem] font-semibold">MrrorSoft</h1>
-        <ul class="flex gap-4">
-          <li class="text-[1.1rem] text-black hover:text-red-500 transition-all duration-500 hover:duration-500"><a href="">Home</a></li>
-          <li class="text-[1.1rem] text-black hover:text-red-500 transition-all duration-500 hover:duration-500"><a href="">About</a></li>
-          <li class="text-[1.1rem] text-black hover:text-red-500 transition-all duration-500 hover:duration-500"><a href="">Services</a></li>
-          <li class="text-[1.1rem] text-black hover:text-red-500 transition-all duration-500 hover:duration-500"><a href="">Contact</a></li>
-        </ul>
+        <div class="hidden sm:block">
+          <ul class="flex gap-4">
+            <li
+              class="text-[1.1rem] text-black hover:text-red-500 transition-all duration-500 hover:duration-500"
+            >
+              <a href="">Home</a>
+            </li>
+            <li
+              class="text-[1.1rem] text-black hover:text-red-500 transition-all duration-500 hover:duration-500"
+            >
+              <a href="">About</a>
+            </li>
+            <li
+              class="text-[1.1rem] text-black hover:text-red-500 transition-all duration-500 hover:duration-500"
+            >
+              <a href="">Services</a>
+            </li>
+            <li
+              class="text-[1.1rem] text-black hover:text-red-500 transition-all duration-500 hover:duration-500"
+            >
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="w-[100%] h-[88vh] flex">
-        <div class="w-[50%] h-[100%] flex flex-col justify-center px-[50px]">
-          <h1 class="text-[2.2rem] font-semibold">
+      <div class="w-[100%] h-[88vh] flex relative">
+        <div
+          class="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm opacity-70"
+          style="background-image: url('./Images/desktop.jpg')"
+        ></div>
+
+        <div
+          class="sm:w-[50%] h-[100%] flex flex-col justify-center px-[20px] sm:px-[50px] relative z-10"
+        >
+          <h1 class="text-[2rem] sm:text-[2.2rem] font-semibold">
             Elevate Your Brand <br />
             With Stunning App And <br />
             Website Design
           </h1>
-          <p class="w-[70%] text-[0.9rem] text-gray-500">
+          <p class="sm:w-[70%] text-[0.9rem] text-gray-100">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
             vitae minus modi adipisci, recusandae ratione?
           </p>
           <div class="mt-[10px] flex gap-2">
             <a
-              class="px-[30px] rounded-full bg-black text-white py-[7px]"
+              class="px-[30px] rounded-full bg-black text-white py-[7px] hover:bg-gray-800 transition-colors"
               href=""
               >Get Start</a
             >
             <a
-              class="px-[30px] py-[7px] rounded-full border-[2px] border-[#f38239]"
+              class="px-[30px] py-[7px] rounded-full border-[2px] border-[#f38239] hover:bg-[#f38239] hover:text-white transition-colors"
               href=""
               >View Project</a
             >
           </div>
         </div>
 
-        <div class="w-[50%] h-[100%] flex justify-center items-center">
-          <div class="w-[60%] h-[70%] bg-white rounded-lg p-[10px] relative">
-            <div
-              class="bg-white rounded-lg absolute top-0 left-0 w-[200px] p-[10px]"
-            >
-              <div class="p-[10px] rounded-lg bg-[#f5f5f5]">
-                <h1 class="text-[2.rem] font-medium">280+</h1>
-                <p class="text-[0.8rem]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusamus, quis?
-                </p>
+        <div class="w-[50%] h-[100%] hidden sm:block relative z-10">
+          <div class="w-[100%] h-[100%] flex justify-center items-center">
+            <div class="w-[60%] h-[70%] bg-white rounded-lg p-[10px] relative">
+              <div
+                class="bg-white rounded-lg absolute top-0 left-0 w-[200px] p-[10px]"
+              >
+                <div class="p-[10px] rounded-lg bg-[#f5f5f5]">
+                  <h1 class="text-[2rem] font-medium">280+</h1>
+                  <p class="text-[0.8rem]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus, quis?
+                  </p>
+                </div>
               </div>
-            </div>
-            <div
-              class="bg-white w-[150px] absolute bottom-0 right-0 p-[10px] rounded-lg"
-            >
-              <div class="p-[10px] rounded-lg bg-black text-white">
-                <h1 class="text-[2rem] font-medium">200+</h1>
-                <p class="text-[0.6rem]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-                  animi.
-                </p>
+              <div
+                class="bg-white w-[150px] absolute bottom-0 right-0 p-[10px] rounded-lg"
+              >
+                <div class="p-[10px] rounded-lg bg-black text-white">
+                  <h1 class="text-[2rem] font-medium">200+</h1>
+                  <p class="text-[0.6rem]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sunt, animi.
+                  </p>
+                </div>
               </div>
+              <img
+                class="w-[100%] h-[100%] rounded-lg object-cover"
+                src="./Images/desktop.jpg"
+                alt=""
+              />
             </div>
-            <img
-              class="w-[100%] h-[100%] rounded-lg"
-              src="./Images/desktop.jpg"
-              alt=""
-            />
           </div>
         </div>
       </div>
     </div>
 
     <div
-      class="w-[100%] h-[12vh] text-white bg-black flex justify-evenly items-center"
+      class="w-[100%] py-[50px] sm:py-0 gap-4 sm:gap-0 sm:h-[12vh] text-white bg-black flex flex-col sm:flex-row justify-evenly items-center"
     >
       <div class="">
         <h1 class="text-[1.8rem] font-medium">Branding</h1>
@@ -95,16 +122,18 @@
       </div>
     </div>
 
-    <div class="w-[100%] h-[45vh] bg-[#f5f5f5] px-[50px] flex">
-      <div class="w-[50%] h-[100%] flex items-center">
+    <div
+      class="w-[100%] sm:h-[45vh] py-[50px] sm:py-0 bg-[#f5f5f5] px-[20px] sm:px-[50px] flex flex-col sm:flex-row"
+    >
+      <div class="sm:w-[50%] h-[100%] flex items-center">
         <h1 class="text-[2rem] font-semibold">
           Mirrosoft Design <br />
           Superpassed Our <br />
           Expectations
         </h1>
       </div>
-      <div class="w-[50%] h-[100%] flex flex-col justify-center">
-        <p class="w-[70%] text-gray-500">
+      <div class="sm:w-[50%] h-[100%] flex flex-col justify-center">
+        <p class="sm:w-[70%] text-gray-500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
           repudiandae esse itaque, accusantium sint quas illo reprehenderit fuga
           voluptatum sequi minus? Ipsam impedit minus assumenda!
@@ -117,23 +146,25 @@
       </div>
     </div>
 
-    <div class="w-[100%] h-[90vh] flex px-[50px]">
-      <div class="w-[40%] h-[100%] flex flex-col justify-center">
-        <h1 class="font-semibold text-[2.2rem]">
+    <div
+      class="w-[100%] sm:h-[90vh] flex flex-col sm:flex px-[20px] sm:px-[50px]"
+    >
+      <div class="sm:w-[40%] h-[100%] flex flex-col justify-center">
+        <h1 class="font-semibold text-[2rem] sm:text-[2.2rem]">
           Passionate <br />
           Creators, Innovations, <br />
           And Visionaries
         </h1>
-        <p class="text-[0.8rem] mt-2 w-[70%]">
+        <p class="text-[0.8rem] mt-2 sm:w-[70%]">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ut
           itaque blanditiis, ipsa mollitia soluta odit dicta eligendi, dolores
           sunt, atque voluptatem possimus similique tempore?
         </p>
       </div>
       <div
-        class="w-[60%] h-[100% flex justify-center items-center flex-wrap gap-2"
+        class="sm:w-[60%] mt-3 sm:mt-0 h-[100% flex justify-center items-center flex-wrap gap-2"
       >
-        <div class="w-[250px]">
+        <div class="sm:w-[250px]">
           <div
             class="size-[50px] bg-slate-200 rounded-md flex justify-center items-center"
           >
@@ -147,7 +178,7 @@
             qui tempore, nisi nostrum commodi dolore.
           </p>
         </div>
-        <div class="w-[250px]">
+        <div class="sm:w-[250px]">
           <div
             class="size-[50px] bg-slate-200 rounded-md flex justify-center items-center"
           >
@@ -159,7 +190,7 @@
             qui tempore, nisi nostrum commodi dolore.
           </p>
         </div>
-        <div class="w-[250px]">
+        <div class="sm:w-[250px]">
           <div
             class="size-[50px] bg-slate-200 rounded-md flex justify-center items-center"
           >
@@ -171,7 +202,7 @@
             qui tempore, nisi nostrum commodi dolore.
           </p>
         </div>
-        <div class="w-[250px]">
+        <div class="sm:w-[250px]">
           <div
             class="size-[50px] bg-slate-200 rounded-md flex justify-center items-center"
           >
@@ -186,9 +217,9 @@
       </div>
     </div>
 
-    <div class="w-[100%] h-[100vh] px-[50px] my-[50px]">
-      <div class="w-[100%] flex flex-col items-center">
-        <h1 class="text-center font-semibold text-[2.2rem]">
+    <div class="w-[100%] sm:h-[100vh] px-[20px] sm:px-[50px] my-[50px]">
+      <div class="w-[100%] flex flex-col items-center sm:items-center">
+        <h1 class="text-center font-semibold text-[2rem] sm:text-[2.2rem]">
           Tailored Solution For <br />
           Your Needs
         </h1>
@@ -199,55 +230,73 @@
       </div>
       <div class="w-[100%] mt-[30px] flex flex-col gap-3">
         <div
-          class="flex border-b-[2px] border-b-gray-400 justify-between items-center pb-[10px]"
+          class="flex flex-col sm:flex-row border-b-[2px] border-b-gray-400 justify-between items-start sm:items-center pb-[10px]"
         >
-          <h1 class="text-[2rem] w-[40%]">Mobile & Website Design</h1>
-          <p class="w-[45%] text-[0.9rem]">
+          <h1 class="text-[2rem] sm:w-[40%]">Mobile & Website Design</h1>
+          <p class="sm:w-[45%] text-[0.9rem]">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Reprehenderit dicta harum magnam dolores ex minima.
           </p>
-          <img class="h-[70px]" src="./icons/right-up.png" alt="" />
+          <img
+            class="h-[70px] hidden sm:block"
+            src="./icons/right-up.png"
+            alt=""
+          />
         </div>
         <div
-          class="flex border-b-[2px] border-b-gray-400 justify-between items-center pb-[10px]"
+          class="flex flex-col sm:flex-row border-b-[2px] border-b-gray-400 justify-between items-start sm:items-center pb-[10px]"
         >
-          <h1 class="text-[2rem] w-[40%]">Website Development</h1>
-          <p class="w-[45%] text-[0.9rem]">
+          <h1 class="text-[2rem] sm:w-[40%]">Website Development</h1>
+          <p class="sm:w-[45%] text-[0.9rem]">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Reprehenderit dicta harum magnam dolores ex minima.
           </p>
-          <img class="h-[70px]" src="./icons/right-up.png" alt="" />
+          <img
+            class="h-[70px] hidden sm:block"
+            src="./icons/right-up.png"
+            alt=""
+          />
         </div>
         <div
-          class="flex border-b-[2px] border-b-gray-400 justify-between items-center pb-[10px]"
+          class="flex flex-col sm:flex-row border-b-[2px] border-b-gray-400 justify-between items-start sm:items-center pb-[10px]"
         >
-          <h1 class="text-[2rem] w-[40%]">Brand Guidline</h1>
-          <p class="w-[45%] text-[0.9rem]">
+          <h1 class="text-[2rem] sm:w-[40%]">Brand Guidline</h1>
+          <p class="sm:w-[45%] text-[0.9rem]">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Reprehenderit dicta harum magnam dolores ex minima.
           </p>
-          <img class="h-[70px]" src="./icons/right-up.png" alt="" />
+          <img
+            class="h-[70px] hidden sm:block"
+            src="./icons/right-up.png"
+            alt=""
+          />
         </div>
         <div
-          class="flex border-b-[2px] border-b-gray-400 justify-between items-center pb-[10px]"
+          class="flex flex-col sm:flex-row border-b-[2px] border-b-gray-400 justify-between items-start sm:items-center pb-[10px]"
         >
-          <h1 class="text-[2rem] w-[40%]">Product Design</h1>
-          <p class="w-[45%] text-[0.9rem]">
+          <h1 class="text-[2rem] sm:w-[40%]">Product Design</h1>
+          <p class="sm:w-[45%] text-[0.9rem]">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Reprehenderit dicta harum magnam dolores ex minima.
           </p>
-          <img class="h-[70px]" src="./icons/right-up.png" alt="" />
+          <img
+            class="h-[70px] hidden sm:block"
+            src="./icons/right-up.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
-    <div class="w-[100%] h-[90vh] bg-[#f5f5f5] flex">
-      <div class="w-[50%] h-[100%] flex flex-col justify-center px-[50px]">
+    <div class="w-[100%] sm:h-[90vh] bg-[#f5f5f5] flex flex-col sm:flex-row">
+      <div
+        class="sm:w-[50%] h-[100%] flex flex-col justify-center px-[20px] sm:px-[50px]"
+      >
         <h1 class="text-[2.2rem] font-semibold">
           We Blend Beauty <br />
           And Functionality <br />
           Seamlessly
         </h1>
-        <p class="text-[0.9rem] text-gray-500 mt-2 w-[70%]">
+        <p class="text-[0.9rem] text-gray-500 mt-2 sm:w-[70%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
           explicabo ipsa sequi numquam, ipsam quos?
         </p>
@@ -257,25 +306,27 @@
           >Get Touch Now</a
         >
       </div>
-      <div class="w-[50%] h-[100%] flex justify-center items-center">
+      <div
+        class="sm:w-[50%] mt-3 sm:mt-0 h-[100%] flex justify-center items-center"
+      >
         <img
-          class="w-[60%] h-[70%] rounded-lg"
+          class="sm:w-[60%] h-[70%] sm:rounded-lg"
           src="./Images/desktopTwo.jpg"
           alt=""
         />
       </div>
     </div>
 
-    <div class="w-[100%] h-auto px-[50px] my-[50px]">
-      <div class="w-[100%] flex justify-between">
-        <div class="w-[50%]">
+    <div class="w-[100%] h-auto px-[20px] sm:px-[50px] my-[50px]">
+      <div class="w-[100%] flex flex-col sm:flex-row justify-between">
+        <div class="sm:w-[50%]">
           <h1 class="text-[2.2rem]">
             Witness Our <br />
             Success Stories
           </h1>
         </div>
-        <div class="w-[50%] flex justify-end">
-          <p class="w-[65%] text-[0.9rem] text-gray-500">
+        <div class="sm:w-[50%] flex justify-start sm:justify-end">
+          <p class="sm:w-[65%] text-[0.9rem] text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Consequuntur debitis autem molestias animi cum aut quidem inventore
             ipsam, voluptate, officia vero aspernatur. Sequi, illum facere!
@@ -283,20 +334,20 @@
         </div>
       </div>
       <div class="mt-[25px] flex flex-wrap gap-4">
-        <div class="w-[48%] rounded-lg">
+        <div class="sm:w-[48%] h-[60%] sm:h-auto rounded-lg">
           <img
             class="w-[100%] rounded-lg"
             src="./Images/desktopTwo.jpg"
             alt=""
           />
         </div>
-        <div class="w-[48%] rounded-lg">
+        <div class="sm:w-[48%] h-[60%] sm:h-auto rounded-lg">
           <img class="w-[100%] rounded-lg" src="./Images/desktop.jpg" alt="" />
         </div>
-        <div class="w-[48%] rounded-lg">
+        <div class="sm:w-[48%] h-[60%] sm:h-auto rounded-lg">
           <img class="w-[100%] rounded-lg" src="./Images/desktop.jpg" alt="" />
         </div>
-        <div class="w-[48%] rounded-lg">
+        <div class="sm:w-[48%] h-[60%] sm:h-auto rounded-lg">
           <img
             class="w-[100%] rounded-lg"
             src="./Images/desktopTwo.jpg"
@@ -307,10 +358,10 @@
     </div>
 
     <div
-      class="w-[100%] h-[80vh] bg-black text-white flex flex-col justify-center items-center"
+      class="w-[100%] py-[50px] sm:py-0 sm:h-[80vh] bg-black text-white flex flex-col justify-center items-center"
     >
-      <h1 class="text-[4rem]">Let's Create Together</h1>
-      <p class="text-[0.9rem] mb-3 mt-2 text-gray-300 w-[50%] text-center">
+      <h1 class="text-[2.2rem] sm:text-[4rem]">Let's Create Together</h1>
+      <p class="text-[0.9rem] mb-3 mt-2 text-gray-300 sm:w-[50%] text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
         cumque fugiat ratione quod sapiente vero obcaecati dolor, nulla aliquam
         perspiciatis, quaerat enim. Soluta, voluptas facilis!
@@ -322,13 +373,15 @@
       >
     </div>
 
-    <div class="w-[100%] h-[10vh] flex px-[50px] justify-between items-center">
+    <div
+      class="w-[100%] h-[10vh] flex px-[20px] sm:px-[50px] justify-between items-center"
+    >
       <h1 class="text-[1.5rem] font-semibold">Mirrosoft</h1>
       <ul class="flex gap-4">
         <li><a class="text-gray-500" href="">Home</a></li>
-        <li><a class="text-gray-500 href="">About</a></li>
-        <li><a class="text-gray-500 href="">Services</a></li>
-        <li><a class="text-gray-500 href="">Contact</a></li>
+        <li><a class="text-gray-500" href="">About</a></li>
+        <li><a class="text-gray-500" href="">Services</a></li>
+        <li><a class="text-gray-500" href="">Contact</a></li>
       </ul>
     </div>
   </body>
